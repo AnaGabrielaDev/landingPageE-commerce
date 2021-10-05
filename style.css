@@ -70,7 +70,7 @@ img{
 }
 
 #footerleft {
-    margin-top: 23px;
+    margin-top: 36px;
     text-align: right;
     font-size: 20px;
 }
@@ -190,4 +190,33 @@ div.inputs {
     height: 86px;
     line-height: 88px;
   }
+}
+.text:target{
+  border: 1px solid #000;
+}
+.container{
+  width: 250px;
+  max-width: 250px;
+  display: table;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+}
+
+.wall{
+    display: none;
+    width: 360px;
+    height: 320px;
+}
+
+
+
+.wall:target{
+    display: block;
+}
+.skip {
+  margin: 10px;
+  color: #000000;
+  text-decoration-line: none;
 }
