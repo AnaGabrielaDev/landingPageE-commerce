@@ -18,7 +18,8 @@ h2 {
 .logo {
     font-family: christmas-craft-personal-use;
     text-align: center;
-    font-size: 50px;
+    font-size: 90px;
+    background-image: url(sets/submarca/aquarela.png);
 }
 .plataform {
     text-align: center;
@@ -85,7 +86,8 @@ footer {
 input {
     padding: 20px;
     background-color: rgb(221, 220, 220);
-    box-shadow: -5px 18px 30px rgba(0, 0, 0, 0.438)
+    box-shadow: -5px 18px 30px rgba(0, 0, 0, 0.438);
+    border-color: #e96359;
 }
 
 div.inputs {
