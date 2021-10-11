@@ -14,7 +14,9 @@ main{
 h2 {
     font-family: christmas-craft-personal-use;
     font-size: 35px;
-}
+  }
+p {text-align: justify;}
+
 .logo {
     font-family: christmas-craft-personal-use;
     text-align: center;
@@ -26,18 +28,17 @@ h2 {
 }
 
   .box{
-    float: left;
     width: 20%;
+    margin: 10px;
   }
   .costumerLogo {
+    display: flex;
+    flex-wrap: row;
+    justify-content: center;
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
-  .costumerLogo::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+
 img{
     width: 200px;
     height: 200px;
@@ -57,13 +58,38 @@ img{
 .nextTo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+.nextTo-box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextTo-img {
+  border-style: solid;
+  border-width: 5px;
+  border-color:#000;
+  border-radius: 50%;
+}
+
+.nextTo-txt {
+  text-align: center;
 }
 
 .nextTo-item {
-    display: flex; 
-    flex-direction: column
+  display: flex; 
+  flex-direction: column;
+  white-space: pre-line;
+}
+
+.aboutus_txt {
+  width: 650px;
+  white-space: pre-line;  
 }
 
 #aboutus {
@@ -121,7 +147,7 @@ div.inputs {
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
   
-  content: 'ALTERNATE TEXT';
+  content: 'CONTACT US';
   display: block;
   position: absolute;
   top: 0;
@@ -208,17 +234,46 @@ div.inputs {
 
 .wall{
     display: none;
-    width: 360px;
+    width: 600px;
     height: 320px;
 }
-
-
 
 .wall:target{
     display: block;
 }
+
+
+.wall_box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wall_txt{
+  display: flex;
+  flex-direction: column;
+  height: 115px;
+  width: 400px;
+  white-space: pre-line;
+}
+.wall_img{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+}
+
 .skip {
   margin: 10px;
   color: #000000;
-  text-decoration-line: none;
+  text-decoration: none;
+}
+.skip_btn{
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  border: #000 1px solid;
+}
+.skip_btns{
+  display: flex;
+  flex-direction: row;
 }
